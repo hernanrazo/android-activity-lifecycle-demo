@@ -1,0 +1,1 @@
+An android app demo that showcases the android activity lifecycle.
