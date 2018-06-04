@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    //========================================activity lifecycle callbacks code===============================
+    //========================================activity lifecycle callbacks code=======================================
 
     //called when activity is first created
     // this callback is mandatory
@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onCreate() callback started");
+        //make toast to have a visual as to which callback is currently called
+        Toast.makeText(MainActivity.this, "CurrentCallback: on()", Toast.LENGTH_SHORT).show();
+
 
         //Set up UI components in this callback in order to have them at the start of the activity
 
@@ -58,13 +61,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onStart() callback started");
 
+        //make toast to have a visual as to which callback is currently called
+        Toast.makeText(MainActivity.this, "CurrentCallback: onStart()", Toast.LENGTH_SHORT).show();
+
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setContentView(R.layout.activity_main);
+        Log.i(TAG, "onRestart() callback started");
+
+        //make toast to have a visual as to which callback is currently called
+        Toast.makeText(MainActivity.this, "CurrentCallback: onRestart()", Toast.LENGTH_SHORT).show();
+
+    }
+
 
     @Override
     protected void onResume() {
         super.onResume();
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onResume() callback started");
+
+        //make toast to have a visual as to which callback is currently called
+        Toast.makeText(MainActivity.this, "CurrentCallback: onResume()", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -74,6 +95,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onPause() callback started");
 
+        //make toast to have a visual as to which callback is currently called
+        Toast.makeText(MainActivity.this, "CurrentCallback: onPause()", Toast.LENGTH_SHORT).show();
+
     }
 
     @Override
@@ -82,6 +106,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onStop() callback started");
 
+        //make toast to have a visual as to which callback is currently called
+        Toast.makeText(MainActivity.this, "CurrentCallback: onStop()", Toast.LENGTH_SHORT).show();
+
+
     }
 
     @Override
@@ -89,5 +117,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onDestroy();
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onDestroy() callback started");
+
+        //make toast to have a visual as to which callback is currently called
+        Toast.makeText(MainActivity.this, "CurrentCallback: onDestroy()", Toast.LENGTH_SHORT).show();
+
     }
 }
