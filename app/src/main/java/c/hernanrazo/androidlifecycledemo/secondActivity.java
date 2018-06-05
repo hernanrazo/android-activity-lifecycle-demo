@@ -31,10 +31,7 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
-
     //========================================activity lifecycle callbacks code===============================
-
-
     // called when activity is first created
     // this callback is mandatory
     @Override
@@ -46,7 +43,7 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
 
 
         Toast toast  = Toast.makeText(secondActivity.this, "Second:onCreate()", Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.RIGHT, 100, -480);
+        toast.setGravity(Gravity.RIGHT, 0, -480);
         toast.show();
 
         //Set up UI components in this callback in order to have them at the start of the activity
@@ -62,7 +59,7 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
         Log.i(TAG, "onStart() callback started");
 
         Toast toast  = Toast.makeText(secondActivity.this, "Second:onStart()", Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.RIGHT, 100, -280);
+        toast.setGravity(Gravity.RIGHT, 0, -280);
         toast.show();
     }
 
@@ -74,7 +71,7 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
 
 
         Toast toast  = Toast.makeText(secondActivity.this, "second:onRestart()", Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.RIGHT, 100, -80);
+        toast.setGravity(Gravity.RIGHT, 0, -80);
         toast.show();
     }
 
@@ -85,7 +82,7 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
         Log.i(TAG, "onResume() callback started");
 
         Toast toast  = Toast.makeText(secondActivity.this, "second:onResume()", Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.RIGHT, 100, 120);
+        toast.setGravity(Gravity.RIGHT, 0, 120);
         toast.show();
     }
 
@@ -96,9 +93,8 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
         Log.i(TAG, "onPause() callback started");
 
         Toast toast  = Toast.makeText(secondActivity.this, "second:onPause()", Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.RIGHT, 100, 315);
+        toast.setGravity(Gravity.RIGHT, 0, 315);
         toast.show();
-
     }
 
     @Override
@@ -107,6 +103,9 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_second);
         Log.i(TAG, "onStop() callback started");
 
+        Toast toast  = Toast.makeText(secondActivity.this, "second:onStop()", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.RIGHT, 0, 510);
+        toast.show();
     }
 
     @Override
@@ -114,5 +113,8 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
         super.onDestroy();
         setContentView(R.layout.activity_second);
         Log.i(TAG, "onDestroy() callback started");
+
+        //no toast is possible here because context will be null
+
     }
 }

@@ -32,9 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
     //========================================activity lifecycle callbacks code=======================================
-
     //called when activity is first created
     //this callback is mandatory
     @Override
@@ -46,8 +44,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         //make toast to have a visual as to which callback is currently called
-
-
         Toast toast  = Toast.makeText(MainActivity.this, "First:onCreate()", Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.LEFT, -100, -480);
         toast.show();
@@ -109,7 +105,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toast toast  = Toast.makeText(MainActivity.this, "First:onPause()", Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.LEFT, -100, 315);
         toast.show();
-
     }
 
     @Override
@@ -119,9 +114,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.i(TAG, "onStop() callback started");
 
         //make toast to have a visual as to which callback is currently called
-        Toast.makeText(MainActivity.this, "First: onStop()", Toast.LENGTH_SHORT).show();
-
-
+        Toast toast  = Toast.makeText(MainActivity.this, "First:onStop()", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.LEFT, -100, 510);
+        toast.show();
     }
 
     @Override
@@ -130,8 +125,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onDestroy() callback started");
 
-        //make toast to have a visual as to which callback is currently called
-        Toast.makeText(MainActivity.this, "First: onDestroy()", Toast.LENGTH_SHORT).show();
-
+        //no toast is possible here because context will be null
     }
 }
