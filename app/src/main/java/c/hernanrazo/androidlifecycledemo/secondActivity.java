@@ -84,6 +84,9 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_second);
         Log.i(TAG, "onResume() callback started");
 
+        Toast toast  = Toast.makeText(secondActivity.this, "second:onResume()", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.RIGHT, 100, 120);
+        toast.show();
     }
 
     @Override
@@ -91,6 +94,10 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
         super.onPause();
         setContentView(R.layout.activity_second);
         Log.i(TAG, "onPause() callback started");
+
+        Toast toast  = Toast.makeText(secondActivity.this, "second:onPause()", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.RIGHT, 100, 315);
+        toast.show();
 
     }
 

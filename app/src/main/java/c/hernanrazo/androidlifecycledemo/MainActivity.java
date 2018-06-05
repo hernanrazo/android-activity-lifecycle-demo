@@ -94,8 +94,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.i(TAG, "onResume() callback started");
 
         //make toast to have a visual as to which callback is currently called
-        Toast.makeText(MainActivity.this, "First: onResume()", Toast.LENGTH_SHORT).show();
-
+        Toast toast  = Toast.makeText(MainActivity.this, "First:onResume()", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.LEFT, -100, 120);
+        toast.show();
     }
 
     @Override
@@ -105,7 +106,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.i(TAG, "onPause() callback started");
 
         //make toast to have a visual as to which callback is currently called
-        Toast.makeText(MainActivity.this, "First: onPause()", Toast.LENGTH_SHORT).show();
+        Toast toast  = Toast.makeText(MainActivity.this, "First:onPause()", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.LEFT, -100, 315);
+        toast.show();
 
     }
 
