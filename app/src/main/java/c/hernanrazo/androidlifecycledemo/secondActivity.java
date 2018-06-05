@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -19,7 +20,10 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
 
             case R.id.button:
                 //add logic for when the button is pressed
-                Toast.makeText(secondActivity.this, "Button Pressed", Toast.LENGTH_SHORT).show();
+                Toast toast  = Toast.makeText(secondActivity.this, "Second Button Pressed", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.RIGHT, 0, 780);
+                toast.show();
+
                 Log.i(TAG,"button pressed");
 
                 Intent MainActivityIntent = new Intent(secondActivity.this, MainActivity.class);
@@ -31,16 +35,21 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
     //========================================activity lifecycle callbacks code===============================
 
 
-    //called when activity is first created
+    // called when activity is first created
     // this callback is mandatory
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
         Log.i(TAG, "onCreate() callback started");
 
-        //Set up UI components in this callback in order to have them at the start of the activity
 
+        Toast toast  = Toast.makeText(secondActivity.this, "Second:onCreate()", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.RIGHT, 100, -480);
+        toast.show();
+
+        //Set up UI components in this callback in order to have them at the start of the activity
         //set listener for button
         final Button button = findViewById(R.id.button);
         button.setOnClickListener(this);
@@ -52,6 +61,21 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_second);
         Log.i(TAG, "onStart() callback started");
 
+        Toast toast  = Toast.makeText(secondActivity.this, "Second:onStart()", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.RIGHT, 100, -280);
+        toast.show();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setContentView(R.layout.activity_second);
+        Log.i(TAG, "onRestart() callback started");
+
+
+        Toast toast  = Toast.makeText(secondActivity.this, "second:onRestart()", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.RIGHT, 100, -80);
+        toast.show();
     }
 
     @Override
