@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         githubLink.setMovementMethod(LinkMovementMethod.getInstance());
 
         //set listener for button
-        //TODO: add timer to disable buttons so toasts don't overlap between activities
        final Button button = findViewById(R.id.button);
        button.setOnClickListener(this);
     }
