@@ -5,7 +5,7 @@ An android app demo that showcases the android activity lifecycle. There are two
 
 BACKGROUND:
 ---
-The android activity lifecycle includes the following callbacks:  
+The android activity lifecycle includes the following callbacks: `onCreate()`, `onStart()`, `onResume()`, `onPause()`, `onStop()`, `onRestart()`, and `onDestroy()`. These callbacks offer areas for developers to dictate how apps behave. 
 
 onCreate()
 ----
@@ -21,7 +21,7 @@ Called when the user returns to an activity after briefly exiting it. At this po
 
 onPause()
 ----
-Called when 
+Called when the user leaves the current activity to another activity or leaves the app altogether. Certain processes that are not needed while the activity is not in the foreground will be stopped.  
 
 onStop()
 ----
@@ -35,7 +35,8 @@ onDestroy()
 ----
 The end of the activity lifecycle. This activity is used to stop all resources and tasks started in onCreate(). 
 
-
+How to use this demo
+===
 
 Sources and helpful links:
 ---
