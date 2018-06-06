@@ -3,7 +3,8 @@ Android Lifecycle Demo
 
 An android app demo that showcases the android activity lifecycle. There are two activities, `MainActivity.java` and `secondActivity.java`. Using the logcat and the log class, this app shows the user when each callback is called in both activities. Both activities have a button that is used to switch between the two and showcase how the lifecycles interact in each respective activity and when switching between the two.
 
-##BACKGROUND
+BACKGROUND:
+---
 The android activity lifecycle includes the following callbacks:  
 
 onCreate()
