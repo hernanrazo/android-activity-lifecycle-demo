@@ -38,6 +38,14 @@ The end of the activity lifecycle. This activity is used to stop all resources a
 How to use this demo
 ===
 
+As stated earlier, there are two activities in this app. Toasts on the screen and logs in the logcat show up whenever a callback is called.   
+  
+You can view the logcat logs by opening the logcat in android studio while your android device is running the app and connected to your computer.  
+
+![Logcat screenshot](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/logcat.png)]  
+
+
+
 Sources and helpful links:
 ---
 https://developer.android.com/guide/components/activities/activity-lifecycle#java
