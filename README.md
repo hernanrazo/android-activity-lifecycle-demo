@@ -48,22 +48,22 @@ When looking at the actual phone screen, you can see that the toasts for each re
 
 Map showing where each activity's toasts will show up:  
 
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/toastMap.png" width="500" height="500" title="Toast Map">  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/toastMap.png" width="600" height="900" title="Toast Map">  
 
 The `onCreate()` toasts will show up the highest:  
   
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onCreate.png" width="500" height="500" title="onCreate">    
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onCreate.png" width="600" height="900" title="onCreate">    
 Switch between activities to see other callbacks and how they are each called. In this case, the user went from the second activity into the first activity:  
 
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/betweenActivities.png" width="500" height="500" title="between activities">  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/betweenActivities.png" width="600" height="900" title="between activities">  
 
 the `onPause()` toasts will show up when you escape but don't kill the app. As shown here, the toast shows up on the homescreen:   
   
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onPause.png" width="500" height="500" title="onPause">  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onPause.png" width="600" height="900" title="onPause">  
 
 All other callback toasts should be fairly obvious. To call the `onRestart()` callback toast, exit the app without killing it and then return to it shortly after:  
   
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onRestart.png" width="500" height="500" title="onRestart">  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onRestart.png" width="600" height="900" title="onRestart">  
 
 Sources and helpful links:
 ---
