@@ -48,23 +48,22 @@ When looking at the actual phone screen, you can see that the toasts for each re
 
 Map showing where each activity's toasts will show up:  
 
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/toastMap.png" width="256" height="256" title="Toast Map">
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/toastMap.png" width="500" height="500" title="Toast Map">  
 
 The `onCreate()` toasts will show up the highest:  
-
-![onCreate() screenshot](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onCreate.png){:height="50%" width="50%"}]  
-
+  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onCreate.png" width="500" height="500" title="onCreate">    
 Switch between activities to see other callbacks and how they are each called. In this case, the user went from the second activity into the first activity:  
 
-![betweenActivities screenshot](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/betweenActivities.png){:height="50%" width="50%"}]  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/betweenActivities.png" width="500" height="500" title="between activities">  
 
-the `onPause()` toasts will show up when you escape but don't kill the app. As shown here, the toast shows up on the homescreen.  
-
-![onPause() screenshot](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onPause.png){:height="50%" width="50%"}]  
+the `onPause()` toasts will show up when you escape but don't kill the app. As shown here, the toast shows up on the homescreen:   
+  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onPause.png" width="500" height="500" title="onPause">  
 
 All other callback toasts should be fairly obvious. To call the `onRestart()` callback toast, exit the app without killing it and then return to it shortly after:  
-
-![onRestart() screenshot](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onRestart.png){:height="50%" width="50%"}]  
+  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onRestart.png" width="500" height="500" title="onRestart">  
 
 Sources and helpful links:
 ---
