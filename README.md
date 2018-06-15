@@ -48,7 +48,7 @@ When looking at the actual phone screen, you can see that the toasts for each re
 
 Map showing where each activity's toasts will show up:  
 
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/toastMap.png" height="40%"width="40%">  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/toastMap.png" width="256" height="256" title="Toast Map">
 
 The `onCreate()` toasts will show up the highest:  
 
