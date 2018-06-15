@@ -52,18 +52,18 @@ Map showing where each activity's toasts will show up:
 
 The `onCreate()` toasts will show up the highest:  
   
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onCreate.png" width="600" height="900" title="onCreate">    
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onCreate.png" width="500" height="750" title="onCreate">    
 Switch between activities to see other callbacks and how they are each called. In this case, the user went from the second activity into the first activity:  
 
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/betweenActivities.png" width="600" height="900" title="between activities">  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/betweenActivities.png" width="500" height="750" title="between activities">  
 
 the `onPause()` toasts will show up when you escape but don't kill the app. As shown here, the toast shows up on the homescreen:   
   
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onPause.png" width="600" height="900" title="onPause">  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onPause.png" width="500" height="750" title="onPause">  
 
 All other callback toasts should be fairly obvious. To call the `onRestart()` callback toast, exit the app without killing it and then return to it shortly after:  
   
-<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onRestart.png" width="600" height="900" title="onRestart">  
+<img src="https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onRestart.png" width="500" height="750" title="onRestart">  
 
 Sources and helpful links:
 ---
