@@ -44,7 +44,27 @@ You can view the logcat logs by opening the logcat in android studio while your 
 
 ![Logcat screenshot](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/logcat.png)]  
 
+When looking at the actual phone screen, you can see that the toasts for each respective callback will pop up on the screen. `onCreate()` will show up on top and all other callbacks up to `onStop()`will show up underneath it. The toasts for the first activity will show up on the left while the callbacks for the second activity will show up on the right. The example screenshots shown here will show the behavior for the first activity only.  
 
+Map showing where each activity's toasts will show up:  
+
+![Toast Map](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/toastMap.png)]   
+
+The `onCreate()` toasts will show up the highest:  
+
+![onCreate() screenshot](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onCreate.png)]  
+
+Switch between activities to see other callbacks and how they are each called. In this case, the user went from the second activity into the first activity:  
+
+![betweenActivities screenshot](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/betweenActivities.png)]  
+
+the `onPause()` toasts will show up when you escape but don't kill the app. As shown here, the toast shows up on the homescreen.  
+
+![onPause() screenshot](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onPause.png)]  
+
+All other callback toasts should be fairly obvious. To call the `onRestart()` callback toast, exit the app without killing it and then return to it shortly after:  
+
+![onRestart() screenshot](https://github.com/hrazo7/android-activity-lifecycle-demo/blob/master/images/onRestart.png)]  
 
 Sources and helpful links:
 ---
